@@ -1,7 +1,7 @@
 /*
 Customer Behavior Analysis: Danny's Diner Portfolio Project
 
-Skills used: Joins, CTE's, Aggregate Functions, Partition Function, Case Function, Date Functions.
+Skills used: Joins, CTE's, Aggregate Functions, Partition Function, Case Function, Date Functions, Automated Reports.
 
 */
 
