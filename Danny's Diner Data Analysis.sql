@@ -124,7 +124,7 @@ ORDER BY 2 DESC;
 
 WITH most_popular AS (
 SELECT S.customer_id, M.product_name, COUNT(*) as purchase_count,
-		ROW_NUMBER() OVER(PARTITION BY S.customer_id ORDER BY COUNT(*) DESC) AS rank
+		DENSE_RANK() OVER(PARTITION BY S.customer_id ORDER BY COUNT(*) DESC) AS rank
 FROM dbo.sales as S
 JOIN dbo.menu as M
 	ON S.product_id = M.product_id
